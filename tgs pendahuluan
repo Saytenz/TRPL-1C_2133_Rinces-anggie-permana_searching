@@ -1,0 +1,34 @@
+void sisipkanData(List<int> data, int kunci) {
+
+data.add(kunci);
+
+data.sort(); // Mengurutkan kembali setelah penyisipan
+
+print("Data setelah penyisipan: $data");
+
+}
+
+void hapusData(List<int> data, int kunci) (
+
+data.remove(kunci);
+
+print("Data setelah penghapusan: $data");
+
+}
+
+Run | Debug
+
+void main(){
+
+List<int> data = [2, 5, 8, 10, 15];
+
+print("Data awal: $data");
+
+int kuncisisip - 7;
+
+sisipkanData(data, kuncisisip);
+
+int kunciHapus = 5;
+
+hapusData(data, kunciHapus);
+}
