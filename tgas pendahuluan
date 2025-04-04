@@ -1,0 +1,43 @@
+class Pegawai {
+
+String nama;
+
+String nip;
+
+Pegawai(this.nama, this.nip);
+
+}
+
+void cariPegawai (List<Pegawai> daftar Pegawai, String kunci) (
+
+for (var pegawai in daftarPegawai) (
+
+If (pegawai.nip kunci) (
+
+print("Pegawai ditemukan: $(pegawai.nama), NIP: $(pegawai.nip)");
+
+return;
+}
+}
+print("Pegawai dengan NIP Skunci tidak ditemukan.");
+
+}
+
+Run | Debug
+
+void main(){
+
+List<Pegawai> daftarPegawai [ Pegawai ("Budi", "12345"), Pegawai ("Siti", "67890"), Pegawai ("Andi", "54321"), 1;
+
+print("Daftar Pegawai:");
+
+for (var pegawai in daftarPegawai) {
+
+print("${pegawai.nama} ${pegawai.nip}");
+
+}
+
+String nipCari - "67890";
+
+cariPegawai (daftarPegawai, nipCari);
+}
